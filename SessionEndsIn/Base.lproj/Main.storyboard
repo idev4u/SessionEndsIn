@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Start View Controller-->
@@ -17,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lta-5G-aRf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lta-5G-aRf">
                                 <rect key="frame" x="277" y="277" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -26,6 +27,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lta-5G-aRf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vo8-mt-6ka"/>
+                            <constraint firstItem="Lta-5G-aRf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="257" id="tgg-ev-pFH"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -43,25 +48,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10, 5, 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JC2-Ig-74q">
-                                <rect key="frame" x="197" y="304" width="56" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4F-O6-Qfb">
-                                <rect key="frame" x="210" y="444" width="31" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4F-O6-Qfb">
+                                <rect key="frame" x="278" y="443" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Bh2-HI-VyW"/>
+                                    <constraint firstAttribute="width" constant="44" id="VeW-ep-7Dp"/>
+                                </constraints>
                                 <state key="normal" title="stop"/>
                                 <connections>
                                     <action selector="stopAction" destination="O5x-Ot-5oc" eventType="touchUpInside" id="LxM-Ba-yff"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="amx-a7-NBP"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JC2-Ig-74q">
+                                <rect key="frame" x="20" y="190" width="560" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="123" id="80B-6h-dER"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JC2-Ig-74q" firstAttribute="top" secondItem="HhN-fz-isg" secondAttribute="bottom" constant="170" id="9SO-tj-e1b"/>
+                            <constraint firstItem="pgL-Zf-C63" firstAttribute="top" secondItem="J4F-O6-Qfb" secondAttribute="bottom" constant="113" id="CF5-jp-Ce1"/>
+                            <constraint firstItem="JC2-Ig-74q" firstAttribute="leading" secondItem="Zud-ua-D22" secondAttribute="leadingMargin" id="QdT-dJ-JXS"/>
+                            <constraint firstItem="JC2-Ig-74q" firstAttribute="trailing" secondItem="Zud-ua-D22" secondAttribute="trailingMargin" id="Wa8-oK-UuM"/>
+                            <constraint firstItem="J4F-O6-Qfb" firstAttribute="centerX" secondItem="JC2-Ig-74q" secondAttribute="centerX" id="XUU-wB-YO7"/>
+                            <constraint firstItem="JC2-Ig-74q" firstAttribute="top" secondItem="HhN-fz-isg" secondAttribute="bottom" constant="170" id="Y4W-AM-OTW"/>
+                            <constraint firstItem="JC2-Ig-74q" firstAttribute="leading" secondItem="Zud-ua-D22" secondAttribute="leadingMargin" id="eOS-kL-RSs"/>
+                            <constraint firstItem="JC2-Ig-74q" firstAttribute="trailing" secondItem="Zud-ua-D22" secondAttribute="trailingMargin" id="wSW-s7-Ikr"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="EndInLabel" destination="JC2-Ig-74q" id="VHB-4Y-FNl"/>
+                        <outlet property="endInLabel" destination="JC2-Ig-74q" id="yyK-BL-5Tv"/>
+                        <outlet property="stopButton" destination="J4F-O6-Qfb" id="m0d-5t-9h6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ygF-jy-KBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
