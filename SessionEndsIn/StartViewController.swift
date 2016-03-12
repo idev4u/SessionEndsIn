@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StartView.swift
 //  SessionEndsIn
 //
 //  Created by Norman Sutorius on 12.03.16.
@@ -7,19 +7,18 @@
 //
 
 import UIKit
+import Foundation
 
-class ViewController: UIViewController {
-
+class StartViewController: UIViewController{
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
 }
-

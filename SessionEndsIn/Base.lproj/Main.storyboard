@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SessionEndsIn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="SessionEndsIn" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -31,10 +31,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Action View Controller-->
         <scene sceneID="aB9-2D-DLH">
             <objects>
-                <viewController id="O5x-Ot-5oc" sceneMemberID="viewController">
+                <viewController id="O5x-Ot-5oc" customClass="ActionViewController" customModule="SessionEndsIn" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HhN-fz-isg"/>
                         <viewControllerLayoutGuide type="bottom" id="pgL-Zf-C63"/>
@@ -53,12 +53,16 @@
                                 <rect key="frame" x="210" y="444" width="31" height="30"/>
                                 <state key="normal" title="stop"/>
                                 <connections>
+                                    <action selector="stopAction" destination="O5x-Ot-5oc" eventType="touchUpInside" id="LxM-Ba-yff"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="amx-a7-NBP"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="EndInLabel" destination="JC2-Ig-74q" id="VHB-4Y-FNl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ygF-jy-KBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
