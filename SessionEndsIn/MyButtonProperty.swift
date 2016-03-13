@@ -14,7 +14,7 @@ class MyButtonProperty {
     button.layer.cornerRadius = 100/2
     let swiftColor = UIColor(red: 0, green: 122/255, blue: 1, alpha: 1).CGColor
     button.layer.borderColor=swiftColor
-    button.layer.borderWidth=1
+    button.layer.borderWidth=2
     return button
     }
     
