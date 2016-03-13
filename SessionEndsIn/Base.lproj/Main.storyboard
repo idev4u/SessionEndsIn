@@ -10,7 +10,7 @@
         <!--Start View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="SessionEndsIn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="Lecture_Ends_In" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -51,7 +51,7 @@
         <!--Action View Controller-->
         <scene sceneID="aB9-2D-DLH">
             <objects>
-                <viewController id="O5x-Ot-5oc" customClass="ActionViewController" customModule="SessionEndsIn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="O5x-Ot-5oc" customClass="ActionViewController" customModule="Lecture_Ends_In" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HhN-fz-isg"/>
                         <viewControllerLayoutGuide type="bottom" id="pgL-Zf-C63"/>
@@ -61,9 +61,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minutes to go ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JC2-Ig-74q">
-                                <rect key="frame" x="20" y="47" width="560" height="70"/>
+                                <rect key="frame" x="20" y="91" width="560" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="qy6-gQ-41C"/>
+                                    <constraint firstAttribute="height" constant="70" id="48G-u9-HNl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -72,8 +72,8 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4F-O6-Qfb">
                                 <rect key="frame" x="250" y="424" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="r3R-sc-Hhk"/>
-                                    <constraint firstAttribute="height" constant="100" id="vkB-Fn-gZk"/>
+                                    <constraint firstAttribute="width" constant="100" id="emk-RQ-reL"/>
+                                    <constraint firstAttribute="height" constant="100" id="vQ6-3d-wPc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="stop"/>
@@ -82,29 +82,36 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="amx-a7-NBP"/>
                                 </connections>
                             </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="lar-gc-mK7">
+                                <rect key="frame" x="100" y="170" width="400" height="2"/>
+                            </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKf-uF-aYc">
-                                <rect key="frame" x="20" y="132" width="560" height="284"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="201"/>
+                                <rect key="frame" x="20" y="169" width="560" height="284"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="JC2-Ig-74q" firstAttribute="leading" secondItem="OKf-uF-aYc" secondAttribute="leading" id="1bP-iC-ICc"/>
-                            <constraint firstItem="pgL-Zf-C63" firstAttribute="top" secondItem="J4F-O6-Qfb" secondAttribute="bottom" constant="76" id="1qg-c0-Fbw"/>
-                            <constraint firstItem="OKf-uF-aYc" firstAttribute="leading" secondItem="Zud-ua-D22" secondAttribute="leadingMargin" id="5p0-tK-647"/>
-                            <constraint firstItem="J4F-O6-Qfb" firstAttribute="centerX" secondItem="OKf-uF-aYc" secondAttribute="centerX" id="Bk5-CN-kdC"/>
-                            <constraint firstItem="J4F-O6-Qfb" firstAttribute="top" secondItem="OKf-uF-aYc" secondAttribute="bottom" constant="8" symbolic="YES" id="Kxs-8q-YdB"/>
-                            <constraint firstItem="OKf-uF-aYc" firstAttribute="trailing" secondItem="JC2-Ig-74q" secondAttribute="trailing" id="mYJ-hP-wfb"/>
-                            <constraint firstItem="JC2-Ig-74q" firstAttribute="top" secondItem="HhN-fz-isg" secondAttribute="bottom" constant="27" id="o13-pe-u9T"/>
-                            <constraint firstItem="OKf-uF-aYc" firstAttribute="top" secondItem="JC2-Ig-74q" secondAttribute="bottom" constant="15" id="ttA-aC-nWy"/>
-                            <constraint firstItem="OKf-uF-aYc" firstAttribute="trailing" secondItem="Zud-ua-D22" secondAttribute="trailingMargin" id="y8f-sM-ZzC"/>
+                            <constraint firstItem="OKf-uF-aYc" firstAttribute="trailing" secondItem="Zud-ua-D22" secondAttribute="trailingMargin" id="0WF-2i-hRn"/>
+                            <constraint firstItem="JC2-Ig-74q" firstAttribute="leading" secondItem="Zud-ua-D22" secondAttribute="leadingMargin" id="5Jk-R3-hj4"/>
+                            <constraint firstItem="JC2-Ig-74q" firstAttribute="leading" secondItem="OKf-uF-aYc" secondAttribute="leading" id="5r0-fc-ffw"/>
+                            <constraint firstItem="pgL-Zf-C63" firstAttribute="top" secondItem="J4F-O6-Qfb" secondAttribute="bottom" constant="76" id="FX9-8o-mU6"/>
+                            <constraint firstItem="lar-gc-mK7" firstAttribute="leading" secondItem="Zud-ua-D22" secondAttribute="leadingMargin" constant="80" id="Oe8-pm-kdv"/>
+                            <constraint firstItem="OKf-uF-aYc" firstAttribute="top" secondItem="lar-gc-mK7" secondAttribute="bottom" constant="-3" id="QN2-EN-BB3"/>
+                            <constraint firstItem="JC2-Ig-74q" firstAttribute="top" secondItem="HhN-fz-isg" secondAttribute="bottom" constant="71" id="U0x-Vi-9m3"/>
+                            <constraint firstItem="J4F-O6-Qfb" firstAttribute="top" secondItem="OKf-uF-aYc" secondAttribute="bottom" constant="-29" id="VSE-op-NVn"/>
+                            <constraint firstItem="OKf-uF-aYc" firstAttribute="centerX" secondItem="J4F-O6-Qfb" secondAttribute="centerX" id="d4i-ak-0vu"/>
+                            <constraint firstItem="lar-gc-mK7" firstAttribute="top" secondItem="JC2-Ig-74q" secondAttribute="bottom" constant="9" id="hrj-w1-vyH"/>
+                            <constraint firstItem="OKf-uF-aYc" firstAttribute="trailing" secondItem="JC2-Ig-74q" secondAttribute="trailing" id="yD2-V9-Qya"/>
+                            <constraint firstItem="lar-gc-mK7" firstAttribute="centerX" secondItem="JC2-Ig-74q" secondAttribute="centerX" id="zEB-5v-pNg"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="endInLabel" destination="JC2-Ig-74q" id="yyK-BL-5Tv"/>
                         <outlet property="endInMinutesLabel" destination="OKf-uF-aYc" id="Wi3-6t-DEX"/>
+                        <outlet property="progressBar" destination="lar-gc-mK7" id="Wbm-cP-hPK"/>
                         <outlet property="stopButton" destination="J4F-O6-Qfb" id="m0d-5t-9h6"/>
                     </connections>
                 </viewController>
