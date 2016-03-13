@@ -15,6 +15,8 @@ class StartViewController: UIViewController{
     var buttonStyler = MyButtonProperty()
     override func viewDidLoad() {
         super.viewDidLoad()
+//        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        UIApplication.sharedApplication().idleTimerDisabled = true
         buttonStyler.setupButton(startButton)
     }
     

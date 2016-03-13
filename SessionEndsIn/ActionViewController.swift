@@ -50,7 +50,9 @@ class ActionViewController: UIViewController {
     
     func controlTimer(repeats: Bool){
         if(repeats){
-            timer = NSTimer.scheduledTimerWithTimeInterval(10.0, target: self, selector: "updateLevel", userInfo: nil, repeats: true)
+            let fiveMinutes = 60*5
+            let timerInterval = NSTimeInterval.init(floatLiteral: Double(fiveMinutes))
+            timer = NSTimer.scheduledTimerWithTimeInterval(timerInterval, target: self, selector: "updateLevel", userInfo: nil, repeats: true)
         }
     }
     
