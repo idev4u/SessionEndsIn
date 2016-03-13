@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -19,22 +20,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lta-5G-aRf">
-                                <rect key="frame" x="277" y="277" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Lta-5G-aRf" secondAttribute="height" multiplier="1:1" id="Lq5-IZ-r4j"/>
+                                    <constraint firstAttribute="height" constant="100" id="Wfw-ea-S13"/>
+                                    <constraint firstAttribute="width" constant="100" id="mp4-Ai-HGy"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Start"/>
                                 <connections>
                                     <segue destination="O5x-Ot-5oc" kind="presentation" id="vCs-2Y-yel"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Lta-5G-aRf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vo8-mt-6ka"/>
-                            <constraint firstItem="Lta-5G-aRf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="257" id="tgg-ev-pFH"/>
+                            <constraint firstItem="Lta-5G-aRf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4EQ-d1-z4e"/>
+                            <constraint firstItem="Lta-5G-aRf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tTD-ps-AYh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="startButton" destination="Lta-5G-aRf" id="GIL-ug-aHe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="733" y="186"/>
         </scene>
         <!--Action View Controller-->
         <scene sceneID="aB9-2D-DLH">
@@ -89,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ygF-jy-KBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1063" y="362"/>
+            <point key="canvasLocation" x="1448" y="186"/>
         </scene>
     </scenes>
 </document>
