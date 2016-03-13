@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4703B7121C944BAF00BBF3B1"
-               BuildableName = "SessionEndsIn.app"
+               BuildableName = "Lecture Ends In.app"
                BlueprintName = "SessionEndsIn"
                ReferencedContainer = "container:SessionEndsIn.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4703B7121C944BAF00BBF3B1"
-            BuildableName = "SessionEndsIn.app"
+            BuildableName = "Lecture Ends In.app"
             BlueprintName = "SessionEndsIn"
             ReferencedContainer = "container:SessionEndsIn.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4703B7121C944BAF00BBF3B1"
-            BuildableName = "SessionEndsIn.app"
+            BuildableName = "Lecture Ends In.app"
             BlueprintName = "SessionEndsIn"
             ReferencedContainer = "container:SessionEndsIn.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4703B7121C944BAF00BBF3B1"
-            BuildableName = "SessionEndsIn.app"
+            BuildableName = "Lecture Ends In.app"
             BlueprintName = "SessionEndsIn"
             ReferencedContainer = "container:SessionEndsIn.xcodeproj">
          </BuildableReference>
