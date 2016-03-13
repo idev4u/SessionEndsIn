@@ -13,6 +13,7 @@ class ActionViewController: UIViewController {
     
    
     @IBOutlet weak var endInLabel: UILabel!
+    @IBOutlet weak var endInMinutesLabel: UILabel!
     @IBOutlet weak var stopButton: UIButton!
     var buttonStyler = MyButtonProperty()
     var timer = NSTimer()
@@ -33,15 +34,15 @@ class ActionViewController: UIViewController {
         switch repeatCount {
         case 1:
             print("noch 5 Minuten")
-            endInLabel.text = "Noch 5 Minuten"
+            endInMinutesLabel.text = "5"
         case 2:
             print("that's all! finshed.")
+            
             finish()
         default:
             print("Something else")
         }
-        
-        
+
         repeatCount++
         
         
@@ -58,11 +59,13 @@ class ActionViewController: UIViewController {
         timer.invalidate()
         stopButton.setTitle("Finish", forState: UIControlState.Normal)
         endInLabel.text = "that's all! finshed."
+        endInMinutesLabel.hidden = true
     }
     
     @IBAction func stopAction() {
         timer.invalidate()
-        endInLabel.text = "Reset"
+        endInLabel.hidden = true
+        endInMinutesLabel.hidden = true
     }
     
 }
