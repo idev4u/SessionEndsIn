@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4703B7131C944BAF00BBF3B1 /* SessionEndsIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SessionEndsIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4703B7131C944BAF00BBF3B1 /* Lecture Ends In.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lecture Ends In.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4703B7161C944BAF00BBF3B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4703B71B1C944BAF00BBF3B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4703B71D1C944BAF00BBF3B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		4703B7141C944BAF00BBF3B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4703B7131C944BAF00BBF3B1 /* SessionEndsIn.app */,
+				4703B7131C944BAF00BBF3B1 /* Lecture Ends In.app */,
 				4703B7271C944BAF00BBF3B1 /* SessionEndsInTests.xctest */,
 				4703B7321C944BAF00BBF3B1 /* SessionEndsInUITests.xctest */,
 			);
@@ -148,7 +148,7 @@
 			);
 			name = SessionEndsIn;
 			productName = SessionEndsIn;
-			productReference = 4703B7131C944BAF00BBF3B1 /* SessionEndsIn.app */;
+			productReference = 4703B7131C944BAF00BBF3B1 /* Lecture Ends In.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4703B7261C944BAF00BBF3B1 /* SessionEndsInTests */ = {
@@ -413,7 +413,7 @@
 				INFOPLIST_FILE = SessionEndsIn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sutorius.de.SessionEndsIn;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Lecture Ends In";
 			};
 			name = Debug;
 		};
@@ -424,7 +424,7 @@
 				INFOPLIST_FILE = SessionEndsIn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sutorius.de.SessionEndsIn;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Lecture Ends In";
 			};
 			name = Release;
 		};
