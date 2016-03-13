@@ -12,9 +12,10 @@ import Foundation
 class StartViewController: UIViewController{
     
     @IBOutlet weak var startButton: UIButton!
+    var buttonStyler = MyButtonProperty()
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupButton();
+        buttonStyler.setupButton(startButton)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -23,11 +24,11 @@ class StartViewController: UIViewController{
         // Dispose of any resources that can be recreated.
     }
     
-    func setupButton(){
-        startButton.layer.cornerRadius = 100/2
-        let swiftColor = UIColor(red: 0, green: 122/255, blue: 1, alpha: 1).CGColor
-        startButton.layer.borderColor=swiftColor
-        startButton.layer.borderWidth=1
-    }
+//    func setupButton(){
+//        startButton.layer.cornerRadius = 100/2
+//        let swiftColor = UIColor(red: 0, green: 122/255, blue: 1, alpha: 1).CGColor
+//        startButton.layer.borderColor=swiftColor
+//        startButton.layer.borderWidth=1
+//    }
    
 }
