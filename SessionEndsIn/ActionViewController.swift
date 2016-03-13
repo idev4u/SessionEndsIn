@@ -14,6 +14,7 @@ class ActionViewController: UIViewController {
    
     @IBOutlet weak var endInLabel: UILabel!
     @IBOutlet weak var stopButton: UIButton!
+    var buttonStyler = MyButtonProperty()
     var timer = NSTimer()
     var repeatCount = 1
     
@@ -21,6 +22,7 @@ class ActionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         controlTimer(true)
+        buttonStyler.setupButton(stopButton)
         
     }
     

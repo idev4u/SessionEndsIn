@@ -60,11 +60,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4F-O6-Qfb">
-                                <rect key="frame" x="278" y="443" width="44" height="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JC2-Ig-74q">
+                                <rect key="frame" x="20" y="190" width="560" height="123"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="Bh2-HI-VyW"/>
-                                    <constraint firstAttribute="width" constant="44" id="VeW-ep-7Dp"/>
+                                    <constraint firstAttribute="height" constant="123" id="6zO-oR-IEt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4F-O6-Qfb">
+                                <rect key="frame" x="250" y="424" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="4TY-7v-Tle"/>
+                                    <constraint firstAttribute="width" constant="100" id="bWO-8N-c3N"/>
                                 </constraints>
                                 <state key="normal" title="stop"/>
                                 <connections>
@@ -72,26 +81,14 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="amx-a7-NBP"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JC2-Ig-74q">
-                                <rect key="frame" x="20" y="190" width="560" height="123"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="123" id="80B-6h-dER"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="JC2-Ig-74q" firstAttribute="top" secondItem="HhN-fz-isg" secondAttribute="bottom" constant="170" id="9SO-tj-e1b"/>
-                            <constraint firstItem="pgL-Zf-C63" firstAttribute="top" secondItem="J4F-O6-Qfb" secondAttribute="bottom" constant="113" id="CF5-jp-Ce1"/>
-                            <constraint firstItem="JC2-Ig-74q" firstAttribute="leading" secondItem="Zud-ua-D22" secondAttribute="leadingMargin" id="QdT-dJ-JXS"/>
-                            <constraint firstItem="JC2-Ig-74q" firstAttribute="trailing" secondItem="Zud-ua-D22" secondAttribute="trailingMargin" id="Wa8-oK-UuM"/>
-                            <constraint firstItem="J4F-O6-Qfb" firstAttribute="centerX" secondItem="JC2-Ig-74q" secondAttribute="centerX" id="XUU-wB-YO7"/>
-                            <constraint firstItem="JC2-Ig-74q" firstAttribute="top" secondItem="HhN-fz-isg" secondAttribute="bottom" constant="170" id="Y4W-AM-OTW"/>
-                            <constraint firstItem="JC2-Ig-74q" firstAttribute="leading" secondItem="Zud-ua-D22" secondAttribute="leadingMargin" id="eOS-kL-RSs"/>
-                            <constraint firstItem="JC2-Ig-74q" firstAttribute="trailing" secondItem="Zud-ua-D22" secondAttribute="trailingMargin" id="wSW-s7-Ikr"/>
+                            <constraint firstItem="J4F-O6-Qfb" firstAttribute="centerX" secondItem="JC2-Ig-74q" secondAttribute="centerX" id="0aw-ki-V98"/>
+                            <constraint firstItem="JC2-Ig-74q" firstAttribute="top" secondItem="HhN-fz-isg" secondAttribute="bottom" constant="170" id="4Yy-7Q-qij"/>
+                            <constraint firstItem="JC2-Ig-74q" firstAttribute="trailing" secondItem="Zud-ua-D22" secondAttribute="trailingMargin" id="Dri-dL-fuz"/>
+                            <constraint firstItem="pgL-Zf-C63" firstAttribute="top" secondItem="J4F-O6-Qfb" secondAttribute="bottom" constant="76" id="Gqd-bl-4Vl"/>
+                            <constraint firstItem="JC2-Ig-74q" firstAttribute="leading" secondItem="Zud-ua-D22" secondAttribute="leadingMargin" id="oaJ-Y8-9Yz"/>
                         </constraints>
                     </view>
                     <connections>
