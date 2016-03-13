@@ -59,7 +59,8 @@ class ActionViewController: UIViewController {
         timer.invalidate()
         stopButton.setTitle("Finish", forState: UIControlState.Normal)
         endInLabel.text = "that's all! finshed."
-        endInMinutesLabel.hidden = true
+        endInMinutesLabel.text = "🏁"
+//        endInMinutesLabel.hidden = true
     }
     
     @IBAction func stopAction() {
