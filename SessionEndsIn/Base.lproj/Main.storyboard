@@ -28,15 +28,26 @@
                                 </constraints>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Start"/>
+                                <state key="normal" title="start"/>
                                 <connections>
                                     <segue destination="O5x-Ot-5oc" kind="presentation" id="vCs-2Y-yel"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkK-Ja-w1Q">
+                                <rect key="frame" x="20" y="135" width="560" height="62"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="60"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="bkK-Ja-w1Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1iV-9J-hIu"/>
                             <constraint firstItem="Lta-5G-aRf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4EQ-d1-z4e"/>
+                            <constraint firstItem="bkK-Ja-w1Q" firstAttribute="centerX" secondItem="Lta-5G-aRf" secondAttribute="centerX" id="NcN-Sc-ObH"/>
+                            <constraint firstItem="bkK-Ja-w1Q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="115" id="U6L-jq-Kch"/>
+                            <constraint firstItem="Lta-5G-aRf" firstAttribute="top" secondItem="bkK-Ja-w1Q" secondAttribute="bottom" constant="53" id="mpL-hU-erI"/>
                             <constraint firstItem="Lta-5G-aRf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tTD-ps-AYh"/>
                         </constraints>
                     </view>
@@ -65,8 +76,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="48G-u9-HNl"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4F-O6-Qfb">
@@ -84,15 +95,17 @@
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="lar-gc-mK7">
                                 <rect key="frame" x="0.0" y="148" width="600" height="2"/>
+                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKf-uF-aYc">
                                 <rect key="frame" x="20" y="140" width="560" height="284"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="200"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="OKf-uF-aYc" firstAttribute="trailing" secondItem="Zud-ua-D22" secondAttribute="trailingMargin" id="0WF-2i-hRn"/>
                             <constraint firstItem="JC2-Ig-74q" firstAttribute="leading" secondItem="Zud-ua-D22" secondAttribute="leadingMargin" id="5Jk-R3-hj4"/>
