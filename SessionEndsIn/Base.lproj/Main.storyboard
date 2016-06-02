@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lta-5G-aRf">
-                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <rect key="frame" x="250" y="424" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Lta-5G-aRf" secondAttribute="height" multiplier="1:1" id="Lq5-IZ-r4j"/>
                                     <constraint firstAttribute="height" constant="100" id="Wfw-ea-S13"/>
@@ -34,11 +34,22 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkK-Ja-w1Q">
-                                <rect key="frame" x="20" y="135" width="560" height="62"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="60"/>
+                                <rect key="frame" x="20" y="93" width="560" height="62"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="60"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's time to start the countdown for the Speaker." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhT-fX-QIH">
+                                <rect key="frame" x="20" y="148" width="560" height="213"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6F4-zk-6ga">
+                                <rect key="frame" x="43" y="322" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -46,11 +57,21 @@
                             <constraint firstItem="bkK-Ja-w1Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1iV-9J-hIu"/>
                             <constraint firstItem="Lta-5G-aRf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4EQ-d1-z4e"/>
                             <constraint firstItem="bkK-Ja-w1Q" firstAttribute="centerX" secondItem="Lta-5G-aRf" secondAttribute="centerX" id="NcN-Sc-ObH"/>
-                            <constraint firstItem="bkK-Ja-w1Q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="115" id="U6L-jq-Kch"/>
-                            <constraint firstItem="Lta-5G-aRf" firstAttribute="top" secondItem="bkK-Ja-w1Q" secondAttribute="bottom" constant="53" id="mpL-hU-erI"/>
-                            <constraint firstItem="Lta-5G-aRf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tTD-ps-AYh"/>
+                            <constraint firstItem="bkK-Ja-w1Q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="73" id="U6L-jq-Kch"/>
+                            <constraint firstItem="UhT-fX-QIH" firstAttribute="centerX" secondItem="bkK-Ja-w1Q" secondAttribute="centerX" id="iLY-5S-GWq"/>
+                            <constraint firstItem="Lta-5G-aRf" firstAttribute="top" secondItem="bkK-Ja-w1Q" secondAttribute="bottom" constant="269" id="mpL-hU-erI"/>
+                            <constraint firstItem="Lta-5G-aRf" firstAttribute="top" secondItem="UhT-fX-QIH" secondAttribute="bottom" constant="63" id="sgv-Eq-oTa"/>
+                            <constraint firstItem="Lta-5G-aRf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="174" id="tTD-ps-AYh"/>
+                            <constraint firstItem="UhT-fX-QIH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wCy-nH-D4N"/>
+                            <constraint firstItem="UhT-fX-QIH" firstAttribute="top" secondItem="bkK-Ja-w1Q" secondAttribute="bottom" constant="-7" id="z8G-aU-0O6"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="6F4-zk-6ga"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="startButton" destination="Lta-5G-aRf" id="GIL-ug-aHe"/>
                     </connections>
@@ -95,10 +116,11 @@
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="lar-gc-mK7">
                                 <rect key="frame" x="0.0" y="148" width="600" height="2"/>
-                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="progressTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="trackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKf-uF-aYc">
-                                <rect key="frame" x="20" y="140" width="560" height="284"/>
+                                <rect key="frame" x="20" y="158" width="560" height="284"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="200"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -112,15 +134,16 @@
                             <constraint firstItem="JC2-Ig-74q" firstAttribute="leading" secondItem="OKf-uF-aYc" secondAttribute="leading" id="5r0-fc-ffw"/>
                             <constraint firstItem="pgL-Zf-C63" firstAttribute="top" secondItem="J4F-O6-Qfb" secondAttribute="bottom" constant="76" id="FX9-8o-mU6"/>
                             <constraint firstItem="lar-gc-mK7" firstAttribute="leading" secondItem="Zud-ua-D22" secondAttribute="leadingMargin" constant="-20" id="Oe8-pm-kdv"/>
-                            <constraint firstItem="OKf-uF-aYc" firstAttribute="top" secondItem="lar-gc-mK7" secondAttribute="bottom" constant="-10" id="QN2-EN-BB3"/>
+                            <constraint firstItem="OKf-uF-aYc" firstAttribute="top" secondItem="lar-gc-mK7" secondAttribute="bottom" constant="8" id="QN2-EN-BB3"/>
                             <constraint firstItem="JC2-Ig-74q" firstAttribute="top" secondItem="HhN-fz-isg" secondAttribute="bottom" constant="33" id="U0x-Vi-9m3"/>
-                            <constraint firstItem="J4F-O6-Qfb" firstAttribute="top" secondItem="OKf-uF-aYc" secondAttribute="bottom" id="VSE-op-NVn"/>
+                            <constraint firstItem="J4F-O6-Qfb" firstAttribute="top" secondItem="OKf-uF-aYc" secondAttribute="bottom" constant="-18" id="VSE-op-NVn"/>
                             <constraint firstItem="OKf-uF-aYc" firstAttribute="centerX" secondItem="J4F-O6-Qfb" secondAttribute="centerX" id="d4i-ak-0vu"/>
                             <constraint firstItem="lar-gc-mK7" firstAttribute="top" secondItem="JC2-Ig-74q" secondAttribute="bottom" constant="25" id="hrj-w1-vyH"/>
                             <constraint firstItem="OKf-uF-aYc" firstAttribute="trailing" secondItem="JC2-Ig-74q" secondAttribute="trailing" id="yD2-V9-Qya"/>
                             <constraint firstItem="lar-gc-mK7" firstAttribute="centerX" secondItem="JC2-Ig-74q" secondAttribute="centerX" id="zEB-5v-pNg"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="endInLabel" destination="JC2-Ig-74q" id="yyK-BL-5Tv"/>
                         <outlet property="endInMinutesLabel" destination="OKf-uF-aYc" id="Wi3-6t-DEX"/>
