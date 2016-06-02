@@ -19,14 +19,14 @@ class ActionViewController: UIViewController {
     var buttonStyler = MyButtonProperty()
     var timer = NSTimer()
     var repeatCount = 1
-    var progressCount = 10
+    var progressCount = 600
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         controlTimer(true)
-        progressBar.setProgress(10, animated: true)
+        progressBar.setProgress(Float(progressCount), animated: true)
         buttonStyler.setupButton(stopButton)
         
     }
@@ -36,10 +36,10 @@ class ActionViewController: UIViewController {
         NSLog("the count is = \(repeatCount)")
         
         switch repeatCount {
-        case 5:
+        case 300:
             print("noch 5 Minuten")
             endInMinutesLabel.text = "5"
-        case 10:
+        case 600:
             print("that's all! finshed.")
             finish()
         default:
@@ -47,18 +47,18 @@ class ActionViewController: UIViewController {
             
         }
         progressCount -= 1
-        progressBar?.progress -= 0.1
-        repeatCount++
+        progressBar?.progress -= 0.001
+        repeatCount+=1
         
         
     }
     
     func controlTimer(repeats: Bool){
         if(repeats){
-            let fiveMinutes = 60
+            let seconds = 1
 //            let fiveMinutes = 5
-            let timerInterval = NSTimeInterval.init(floatLiteral: Double(fiveMinutes))
-            timer = NSTimer.scheduledTimerWithTimeInterval(timerInterval, target: self, selector: "updateLevel", userInfo: nil, repeats: true)
+            let timerInterval = NSTimeInterval.init(floatLiteral: Double(seconds))
+            timer = NSTimer.scheduledTimerWithTimeInterval(timerInterval, target: self, selector: #selector(ActionViewController.updateLevel), userInfo: nil, repeats: true)
         }
     }
     
