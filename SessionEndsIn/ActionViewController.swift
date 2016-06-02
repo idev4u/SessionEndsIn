@@ -26,7 +26,7 @@ class ActionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         controlTimer(true)
-        progressBar.setProgress(Float(progressCount), animated: true)
+        progressBar.setProgress(600, animated: true)
         buttonStyler.setupButton(stopButton)
         
     }
@@ -47,7 +47,7 @@ class ActionViewController: UIViewController {
             
         }
         progressCount -= 1
-        progressBar?.progress -= 0.001
+        progressBar?.progress -= 0.00166666666667
         repeatCount+=1
         
         
