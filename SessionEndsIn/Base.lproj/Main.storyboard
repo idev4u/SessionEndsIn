@@ -92,31 +92,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="lar-gc-mK7">
+                                <rect key="frame" x="20" y="121" width="560" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="Tjm-ld-RbR"/>
+                                </constraints>
+                                <color key="progressTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="trackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minutes to go ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JC2-Ig-74q">
                                 <rect key="frame" x="20" y="53" width="560" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="48G-u9-HNl"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="lar-gc-mK7">
-                                <rect key="frame" x="0.0" y="148" width="600" height="2"/>
-                                <color key="progressTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="trackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKf-uF-aYc">
-                                <rect key="frame" x="20" y="100" width="560" height="284"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="200"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4F-O6-Qfb">
-                                <rect key="frame" x="250" y="392" width="100" height="100"/>
+                                <rect key="frame" x="250" y="397" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="emk-RQ-reL"/>
-                                    <constraint firstAttribute="height" constant="100" id="vQ6-3d-wPc"/>
+                                    <constraint firstAttribute="width" constant="100" id="DtR-Hv-BFX"/>
+                                    <constraint firstAttribute="height" constant="100" id="mLc-UP-X8M"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="stop"/>
@@ -125,26 +119,46 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="amx-a7-NBP"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKf-uF-aYc">
+                                <rect key="frame" x="20" y="161" width="560" height="213"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="200"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bae-v4-Vp3">
+                                <rect key="frame" x="20" y="132" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="z4g-0k-667"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="OKf-uF-aYc" firstAttribute="trailing" secondItem="Zud-ua-D22" secondAttribute="trailingMargin" id="0WF-2i-hRn"/>
-                            <constraint firstItem="JC2-Ig-74q" firstAttribute="leading" secondItem="Zud-ua-D22" secondAttribute="leadingMargin" id="5Jk-R3-hj4"/>
-                            <constraint firstItem="JC2-Ig-74q" firstAttribute="leading" secondItem="OKf-uF-aYc" secondAttribute="leading" id="5r0-fc-ffw"/>
-                            <constraint firstItem="pgL-Zf-C63" firstAttribute="top" secondItem="J4F-O6-Qfb" secondAttribute="bottom" constant="108" id="FX9-8o-mU6"/>
-                            <constraint firstItem="lar-gc-mK7" firstAttribute="leading" secondItem="Zud-ua-D22" secondAttribute="leadingMargin" constant="-20" id="Oe8-pm-kdv"/>
-                            <constraint firstItem="OKf-uF-aYc" firstAttribute="top" secondItem="lar-gc-mK7" secondAttribute="bottom" constant="-50" id="QN2-EN-BB3"/>
-                            <constraint firstItem="JC2-Ig-74q" firstAttribute="top" secondItem="HhN-fz-isg" secondAttribute="bottom" constant="33" id="U0x-Vi-9m3"/>
-                            <constraint firstItem="J4F-O6-Qfb" firstAttribute="top" secondItem="OKf-uF-aYc" secondAttribute="bottom" constant="8" id="VSE-op-NVn"/>
-                            <constraint firstItem="OKf-uF-aYc" firstAttribute="centerX" secondItem="J4F-O6-Qfb" secondAttribute="centerX" id="d4i-ak-0vu"/>
-                            <constraint firstItem="lar-gc-mK7" firstAttribute="top" secondItem="JC2-Ig-74q" secondAttribute="bottom" constant="25" id="hrj-w1-vyH"/>
-                            <constraint firstItem="OKf-uF-aYc" firstAttribute="trailing" secondItem="JC2-Ig-74q" secondAttribute="trailing" id="yD2-V9-Qya"/>
-                            <constraint firstItem="lar-gc-mK7" firstAttribute="centerX" secondItem="JC2-Ig-74q" secondAttribute="centerX" id="zEB-5v-pNg"/>
+                            <constraint firstItem="bae-v4-Vp3" firstAttribute="trailing" secondItem="OKf-uF-aYc" secondAttribute="trailing" id="1sX-O8-GSY"/>
+                            <constraint firstItem="OKf-uF-aYc" firstAttribute="centerX" secondItem="J4F-O6-Qfb" secondAttribute="centerX" id="AZN-G9-RuN"/>
+                            <constraint firstItem="JC2-Ig-74q" firstAttribute="top" secondItem="HhN-fz-isg" secondAttribute="bottom" constant="33" id="CZu-s9-mNW"/>
+                            <constraint firstItem="JC2-Ig-74q" firstAttribute="leading" secondItem="lar-gc-mK7" secondAttribute="leading" id="VFj-hP-Aqn"/>
+                            <constraint firstItem="JC2-Ig-74q" firstAttribute="leading" secondItem="Zud-ua-D22" secondAttribute="leadingMargin" id="XiB-lh-drR"/>
+                            <constraint firstItem="lar-gc-mK7" firstAttribute="leading" secondItem="bae-v4-Vp3" secondAttribute="leading" id="b9p-oa-iI7"/>
+                            <constraint firstItem="lar-gc-mK7" firstAttribute="top" secondItem="HhN-fz-isg" secondAttribute="bottom" constant="101" id="bnL-R8-xKN"/>
+                            <constraint firstItem="OKf-uF-aYc" firstAttribute="top" secondItem="bae-v4-Vp3" secondAttribute="bottom" constant="8" symbolic="YES" id="btv-Xq-og0"/>
+                            <constraint firstItem="lar-gc-mK7" firstAttribute="trailing" secondItem="bae-v4-Vp3" secondAttribute="trailing" id="d2C-Jh-fDn"/>
+                            <constraint firstItem="JC2-Ig-74q" firstAttribute="trailing" secondItem="lar-gc-mK7" secondAttribute="trailing" id="j3P-vi-kWF"/>
+                            <constraint firstItem="pgL-Zf-C63" firstAttribute="top" secondItem="J4F-O6-Qfb" secondAttribute="bottom" constant="103" id="no9-v4-xTi"/>
+                            <constraint firstItem="bae-v4-Vp3" firstAttribute="leading" secondItem="OKf-uF-aYc" secondAttribute="leading" id="oUb-GW-Doi"/>
+                            <constraint firstItem="J4F-O6-Qfb" firstAttribute="top" secondItem="OKf-uF-aYc" secondAttribute="bottom" constant="23" id="tQD-pf-Bac"/>
+                            <constraint firstItem="JC2-Ig-74q" firstAttribute="trailing" secondItem="Zud-ua-D22" secondAttribute="trailingMargin" id="tka-KD-fg1"/>
+                            <constraint firstItem="bae-v4-Vp3" firstAttribute="top" secondItem="JC2-Ig-74q" secondAttribute="bottom" constant="9" id="wXI-5p-Ozw"/>
+                            <constraint firstItem="lar-gc-mK7" firstAttribute="bottom" secondItem="JC2-Ig-74q" secondAttribute="bottom" id="xiH-Jr-nMB"/>
                         </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
+                        <outlet property="countdownTime" destination="bae-v4-Vp3" id="Yhg-4d-5Cp"/>
                         <outlet property="endInLabel" destination="JC2-Ig-74q" id="yyK-BL-5Tv"/>
                         <outlet property="endInMinutesLabel" destination="OKf-uF-aYc" id="Wi3-6t-DEX"/>
                         <outlet property="progressBar" destination="lar-gc-mK7" id="Wbm-cP-hPK"/>

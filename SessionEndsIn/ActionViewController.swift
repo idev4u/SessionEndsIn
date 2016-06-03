@@ -16,6 +16,7 @@ class ActionViewController: UIViewController {
     @IBOutlet weak var endInMinutesLabel: UILabel!
     @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet weak var countdownTime: UILabel!
     var buttonStyler = MyButtonProperty()
     var timer = NSTimer()
     var repeatCount = 1
@@ -26,8 +27,12 @@ class ActionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         controlTimer(true)
-        progressBar.setProgress(600, animated: true)
+        progressBar.setProgress(Float(progressCount), animated: true)
         buttonStyler.setupButton(stopButton)
+        countdownTime.textColor = UIColor.redColor();
+        countdownLabel(progressCount)
+//        let(m,s) = secondsToMinutesSeconds(progressCount)
+//        countdownTime.text = "\(numberOfDigits(m)):\(numberOfDigits(s))"
         
     }
     
@@ -48,6 +53,9 @@ class ActionViewController: UIViewController {
         }
         progressCount -= 1
         progressBar?.progress -= 0.00166666666667
+        countdownLabel(progressCount)
+//        let(m,s) = secondsToMinutesSeconds(progressCount)
+//        countdownTime.text = "\(numberOfDigits(m)):\(numberOfDigits(s))"
         repeatCount+=1
         
         
@@ -77,4 +85,20 @@ class ActionViewController: UIViewController {
         endInMinutesLabel.hidden = true
     }
     
+    func secondsToMinutesSeconds (seconds : Int) -> (Int, Int) {
+        return (seconds % 3600 / 60, (seconds % 3600) % 60)
+    }
+    func numberOfDigits(digit: Int) -> (String){
+        if digit < 10 {
+            return "0\(digit)"
+        } else {
+            return "\(digit)"
+        }
+        
+    }
+    
+    func countdownLabel(progressTime : Int){
+        let(m,s) = secondsToMinutesSeconds(progressCount)
+        countdownTime.text = "\(numberOfDigits(m)):\(numberOfDigits(s))"
+    }
 }
