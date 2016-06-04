@@ -31,8 +31,6 @@ class ActionViewController: UIViewController {
         buttonStyler.setupButton(stopButton)
         countdownTime.textColor = UIColor.redColor();
         countdownLabel(progressCount)
-//        let(m,s) = secondsToMinutesSeconds(progressCount)
-//        countdownTime.text = "\(numberOfDigits(m)):\(numberOfDigits(s))"
         
     }
     
@@ -54,17 +52,12 @@ class ActionViewController: UIViewController {
         progressCount -= 1
         progressBar?.progress -= 0.00166666666667
         countdownLabel(progressCount)
-//        let(m,s) = secondsToMinutesSeconds(progressCount)
-//        countdownTime.text = "\(numberOfDigits(m)):\(numberOfDigits(s))"
         repeatCount+=1
-        
-        
     }
     
     func controlTimer(repeats: Bool){
         if(repeats){
             let seconds = 1
-//            let fiveMinutes = 5
             let timerInterval = NSTimeInterval.init(floatLiteral: Double(seconds))
             timer = NSTimer.scheduledTimerWithTimeInterval(timerInterval, target: self, selector: #selector(ActionViewController.updateLevel), userInfo: nil, repeats: true)
         }
@@ -76,6 +69,7 @@ class ActionViewController: UIViewController {
         stopButton.setTitle("Finish", forState: UIControlState.Normal)
         endInLabel.text = "that's all! finshed."
         endInMinutesLabel.text = "🏁"
+        progressBar?.progress=0
 //        endInMinutesLabel.hidden = true
     }
     
