@@ -9,13 +9,13 @@ I think the the app name will be __10b4__ (ten before) with this app logo
 ## Screenshots of the app in Action
 ### Logo on the Home Screen  
 | Home Screen |
-| -------------------------------------------------------------------------- | |
-| <img src="./Screenshots/IMG_5845.jpg" alt="logo" width="204" height="380"> | |
+| -------------------------------------------------------------------------- | 
+| <img src="./Screenshots/IMG_5845.jpg" alt="logo" width="204" height="380"> | 
 
 ### Welcome Screen
 | Welcome |
-| -------------------------------------------------------------------------- | |
-| <img src="./Screenshots/IMG_5842.jpg" alt="logo" width="204" height="380"> | |
+| -------------------------------------------------------------------------- | 
+| <img src="./Screenshots/IMG_5842.jpg" alt="logo" width="204" height="380"> | 
 
 ### Timer Views  
 | Start Countdown  | After 5 Minutes | And at the End |
